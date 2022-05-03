@@ -1,18 +1,13 @@
-// const jwt = require('jsonwebtoken');
-// const { User } = require('../models');
 // require('dotenv').config();
+const jwt = require('jsonwebtoken');
 
-// const secretKey = process.env.SECRET;
+const secretKey = 'palavraSecreta';
 
-// const jwtConfig = {
-//   expiresIn: '7d  ',
-//   algorithm: 'HS256',
-// };
+const jwtConfig = { expiresIn: '7d', algorithm: 'HS256' };
 
-// const genToken = () => {
-//   const token = jwt.sign({ data: User }, secretKey, jwtConfig);
+const genToken = (user) => {
+  const token = jwt.sign({ data: user }, secretKey, jwtConfig);
+  return token;
+};
 
-//   return token;
-// };
-
-// module.exports = { genToken };
+module.exports = { genToken };  
