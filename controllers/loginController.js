@@ -8,8 +8,9 @@ const createLogin = async (req, res) => {
     if (!login) {
       return res.status(400).json({ message: 'Invalid fields' });
     }
-    return res.status(200).json(login);
+    return res.status(200).json({ token: login });
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 };

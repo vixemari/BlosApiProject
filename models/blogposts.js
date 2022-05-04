@@ -1,10 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
-  const BlogPosts = sequelize.define('BlogPosts', {
-    title: { type: DataTypes.STRING, allowNull: false },
-    content: { type: DataTypes.STRING, allowNull: false },
-    userId: { type: DataTypes.INTEGER, allowNull: false },
-    published: { type: DataTypes.DATE },
-    updated: { type: DataTypes.DATE },
+  const BlogPosts = sequelize.define('BlogPost', {
+    title: DataTypes.STRING,
+    content: DataTypes.STRING,
+    userId: DataTypes.INTEGER,
+    // published: { type: DataTypes.DATE },
+    // updated: { type: DataTypes.DATE },
   }, {
     timestamps: false,
   }); 
