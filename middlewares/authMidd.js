@@ -4,6 +4,7 @@ const secretKey = 'palavraSecreta';
 
 const authVerifier = (req, res, next) => {
   const token = req.headers.authorization;
+  console.log(req.body);
 
   if (!token || token === '') {
     return res.status(401).json({ message: 'Token not found' });
