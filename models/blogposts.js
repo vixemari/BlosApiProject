@@ -5,7 +5,9 @@ module.exports = (sequelize, DataTypes) => {
     userId: DataTypes.INTEGER,
     
   }, {
-    timestamps: false,
+    timestamps: true,
+    createdAt: 'published',
+    updatedAt: 'updated',
   }); 
   
   BlogPost.associate = (models) => {

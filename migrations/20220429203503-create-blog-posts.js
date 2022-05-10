@@ -26,14 +26,14 @@ module.exports = {
         }
       },
       published:{
-        type: Sequelize.DATE,
+        type: 'TIMESTAMP',
         allowNull: false,
-        defaultValue: new Date()
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       updated:{
-        type: Sequelize.DATE,
+        type: 'TIMESTAMP',
         allowNull: false,
-        defaultValue: new Date()
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
       }
     }
     );
