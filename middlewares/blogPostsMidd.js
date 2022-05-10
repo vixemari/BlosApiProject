@@ -1,4 +1,4 @@
-const { Categorie } = require('../models');
+const { Category } = require('../models');
 
 const checkTitle = (req, res, next) => {
   const { title } = req.body;
@@ -21,7 +21,7 @@ const checkCategoryId = async (req, res, next) => {
    if (!categoryIds) {
       return res.status(400).json({ message: '"categoryIds" is required' });
     }
-    const allCategoryIds = await Categorie.findAll();
+    const allCategoryIds = await Category.findAll();
     const filteredCategoryIds = allCategoryIds.filter((category) => 
       categoryIds.includes(category.id));
     if (filteredCategoryIds.length === 0) {
