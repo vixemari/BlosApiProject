@@ -12,11 +12,13 @@ Para fazer um post é necessário usuário e login, portanto será trabalhada a 
 ---
 # Requisitos
 
-  1 - Sua aplicação deve ter o endpoint POST /user
-  2 - Sua aplicação deve ter o endpoint POST /login
-  3 - Sua aplicação deve ter o endpoint GET /user
-  4 - Sua aplicação deve ter o endpoint GET /user/:id
-  5 - Sua aplicação deve ter o endpoint POST /categories
-  6 - Sua aplicação deve ter o endpoint GET /categories
-  7 - Sua aplicação deve ter o endpoint POST /post
-  8 - Sua aplicação deve ter o endpoint GET /post
+ - 1 - Sua aplicação deve ter o endpoint POST /user                                    
+ - 2 - Sua aplicação deve ter o endpoint POST /login                                                
+ - 3 - Sua aplicação deve ter o endpoint GET /user
+ - 4 - Sua aplicação deve ter o endpoint GET /user/:id
+ - 5 - Sua aplicação deve ter o endpoint POST /categories
+ - 6 - Sua aplicação deve ter o endpoint GET /categories
+ - 7 - Sua aplicação deve ter o endpoint POST /post
+ - 8 - Sua aplicação deve ter o endpoint GET /post
+
+
